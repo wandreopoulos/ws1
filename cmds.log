@@ -1,0 +1,390 @@
+    1  sudo apt update 
+    2  sudo apt upgrade
+    3  sudo shutdown -r now 
+    4  sudo apt install software-properties-common
+    5  sudo add-apt-repository ppa:deadsnakes/ppa
+    6  sudo apt install python3.9
+    7  gcc --version
+    8  sudo apt install gcc
+    9  g++ --version
+   10  sudo apt install g++
+   11  python --version
+   12  python3 --version
+   13  sudo apt update 
+   14  sudo apt upgrade 
+   15  sudo apt install mariadb-server
+   16  sudo apt install default-jdk
+   17  sudo apt install r-base
+   18  sudo apt update 
+   19  sudo apt upgrade 
+   20  R
+   21  sudo shutdown now
+   22  ifconfig 
+   23  sudo apt install net-tools
+   24  ifconfig 
+   25  hostnamectl set-hostname f6linux_1
+   26  hostname 
+   27  sudo hostnamectl set-hostname f6linux_1
+   28  hostname 
+   29  sudo nano /etc/hosts
+   30  ls 
+   31  ls /etc/sysconfig/network-scripts
+   32  ls /etc/netplanls /etc/netplan
+   33  sudo ls /etc/netplan
+   34  cd /etc
+   35  ls
+   36  cd netplan
+   37  ls 
+   38  sudo vi 00-installer-config.yaml
+   39  ifconfig 
+   40  sudo shutdown now
+   41  ifconfig 
+   42  sudo vi 00-installer-config.yaml
+   43  sudo vi /etc/netplan/ 00-installer-config.yaml
+   44  sudo vi /etc/netplan/00-installer-config.yaml
+   45  hostnamectl set-hostname f6linux_2
+   46  sudo hostnamectl set-hostname f6linux_2
+   47  sudo shutdown now -r
+   48  ifconfig 
+   49  exit
+   50  myquota
+   51  ls
+   52  ls -latr
+   53  git
+   54  tmux
+   55  sudo apt update
+   56  sudo apt upgrade
+   57  sudo passwd
+   58  sudo adduser test
+   59  sudo apt unpdate
+   60  apt update 
+   61  sudo apt update 
+   62  sudo apt upgrade 
+   63  sudo adduser cai
+   64  passwd
+   65  ls
+   66  ls -latr
+   67  for i in {1..100} ; do touch $i.txt ; done
+   68  ls -latr
+   69  tar cvf tarred.tar *.txt
+   70  tar tvf tarred.tar 
+   71  mkdir demo
+   72  cd demo/
+   73  mv ../tarred.tar .
+   74  tar xvf tarred.tar 
+   75  ls -latr
+   76  tar tvf tarred.tar | grep 100.txt
+   77  for i in {1.1000} ; do touch $i.temp ; done
+   78  ls -latr
+   79  for i in {1..1000} ; do touch $i.temp ; done
+   80  ls -latr
+   81  cd ..
+   82  tar cvf --exclude "*.temp" tarred_file2.tar  ./demo/
+   83  tar cvf --exclude="*.temp" tarred_file2.tar  ./demo/
+   84  tar cvf --exclude='*.temp' tarred_file2.tar  ./demo/
+   85  tar cvf --exclude='*.temp*' tarred_file2.tar  ./demo/
+   86  pwd
+   87  ls -altr
+   88  tar cvf tarred_file2.tar  --exclude='*.temp*'  ./demo/
+   89  tar cvf tarred_file2.tar  --exclude="*.temp"  ./demo/
+   90  tar tvf tarred_file2.tar 
+   91  tar tvf tarred_file2.tar  | grep temp
+   92  echo "me"
+   93  pwd
+   94  echo `pwd`
+   95  echo "pwd"
+   96  echo `ls`
+   97  pwdf
+   98  pwd
+   99  `pwd`
+  100  echo `pwd`
+  101  `pwd`
+  102  envvars
+  103  printenv
+  104  echo $HOME
+  105  echo $PWD
+  106  pwd
+  107  echo $PWD
+  108  cd demo
+  109  echo $PWD
+  110  pwd
+  111  echo $SHELL
+  112  exec /bin/sh
+  113  echo $SHELL
+  114  lks
+  115  ls
+  116  echo $SHELL
+  117  /bin/sh
+  118  exec /bin/sh
+  119  ls
+  120  rm -rf *exclude*
+  121  rm -rf --exclude*
+  122  rm -rf \-\-exclude*
+  123  find . -type f -name "*exclude*" | xargs rm
+  124  ls
+  125  a="ABC"
+  126  b='def'
+  127  echo $a
+  128  echo $b
+  129  c=${a}${b}GHI
+  130  echo $c
+  131  c=$a$bGHI
+  132  echo $c
+  133  echo $bGHI
+  134  b='def'
+  135  echo $b
+  136  b=`def`
+  137  b='def'
+  138  ls
+  139  history > cmds.log
+  140  cat 19.txt 
+  141  nano
+  142  ls -latr
+  143  cat nanotest.txt 
+  144  head cmds.log 
+  145  tail cmds.log 
+  146  less cmds.log 
+  147  more cmds.log 
+  148  less cmds.log 
+  149  ls
+  150  grep tmux cmds.log 
+  151  tmux new-session
+  152  tmux ls
+  153  tmux ls
+  154  tmux new-session
+  155  tmux ls
+  156  tmux create-session
+  157  ls -altr
+  158  pwd
+  159  vi .bashrc 
+  160  vi ~/.bashrc 
+  161  cd demo
+  162  echo ~/.bashrc
+  163  vi ~/.bashrc
+  164  lll
+  165  source ~/.bashrc
+  166  lll
+  167  echo $lll
+  168  lll
+  169  vi .bashrc
+  170  vi ~/.bashrc
+  171  p
+  172  .  ~/.bashrc
+  173  p
+  174  grep shopt ~/.bashrc
+  175  lll /home
+  176  lll /root
+  177  sudo lll /root
+  178  sudo ls /root
+  179  sudo ls -ltra /root
+  180  sudo ls -ltr /root
+  181  sudo ls -ltra /root
+  182  sudo cat /etc/passwd
+  183  sudo cat /etc/shadow
+  184  sudo cat /etc/group
+  185  echo $UID
+  186  vi /etc/sudoers
+  187  sudo vi /etc/sudoers
+  188  sudo vi /etc/sudoers.d/
+  189  sudo vi /etc/sudoers
+  190  cd ..
+  191  l
+  192  history | grep wget
+  193  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  194  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  195  head amazon_reviews_us_Books_v1_02.tsv 
+  196  head -10 amazon_reviews_us_Books_v1_02.tsv 
+  197  head -1 amazon_reviews_us_Books_v1_02.tsv 
+  198  awk -F"\t" {(print $12)} amazon_reviews_us_Books_v1_02.tsv 
+  199  awk -F"\t" {print $12} amazon_reviews_us_Books_v1_02.tsv 
+  200  awk -F"\t" '{print $12}' amazon_reviews_us_Books_v1_02.tsv 
+  201  cut -d'\t' -f12 amazon_reviews_us_Books_v1_02.tsv  | head
+  202  cut -d'' -f12 amazon_reviews_us_Books_v1_02.tsv  | head
+  203  cut -d'	' -f12 amazon_reviews_us_Books_v1_02.tsv  | head
+  204  crontab -l
+  205  vi cronfile
+  206  ls  /tmp
+  207  vi cronfile
+  208  crontab cronfile 
+  209  crontab -l
+  210  crontab -e
+  211  l /tmp
+  212  vi /tmp/d
+  213  l /tmp
+  214  crontab -l
+  215  l /tmp
+  216  ls -la /tmp
+  217  find /directory_path -mtime -1 -ls
+  218  find /tmp -mtime -1 -ls
+  219  find /tmp -mtime -1
+  220  echo $HOST
+  221  netstt
+  222  netstat
+  223  ls
+  224  crontab -l
+  225  su root
+  226  ls -l
+  227  crontab -l
+  228  ls -latr /tmp/
+  229  cat /tmp/db.log 
+  230  ls -latr /tmp/
+  231  crontab -r
+  232  crontab -l
+  233  crontab -e
+  234  crontab -l
+  235  cat cronfile 
+  236  crontab -r
+  237  crontab cronfile 
+  238  crontab -l
+  239  tmux ls
+  240  tmux attach-session 0
+  241  tmu
+  242  tmux
+  243  tmux ls
+  244  tmux attach-session 1
+  245  tmux attach-session -t 1
+  246  tmux ls
+  247  tmux attach-session -t 1
+  248  crontab -l
+  249  ls -latr /tmp
+  250  history | grep wget
+  251  (pwd) > (ls)
+  252  (ls) > (sort)
+  253  (ls) > sort
+  254  ls > sort
+  255  sort < ls
+  256  {ls; pwd}
+  257  $(ls)
+  258  `ls`
+  259  vi sampl.txt
+  260  ls > sampl.txt
+  261  wc < sampl.txt
+  262  who
+  263  lpr
+  264  who | wc
+  265  who | tee /dev/tty | wc -l
+  266  cat sampl.txt > /dev/tty
+  267  cat  > /dev/tty
+  268  cat /dev/tty0
+  269  cat /dev/tty1
+  270  cat /dev/tty2
+  271  cat /dev/ttyS0
+  272  l /dev/tty*
+  273  cat  > /dev/tty0
+  274  cat  < /dev/tty
+  275  ls -latr | /dev/tty* | more
+  276  ls -latr /dev/tty* | more
+  277  bc --
+  278  stat cmds.log 
+  279  ls -altr
+  280  stat sampl.txt
+  281  stat demo
+  282  mv sampl.txt sampl2.txt 
+  283  stat sampl2.txt 
+  284  mv sampl2.txt sampl3.txt 
+  285  stat sampl3.txt 
+  286  mkdir CUSTOMES
+  287  mkdir PRODUCTS
+  288  rn
+  289  rmdir CUSTOMES/
+  290  echo $?
+  291  touch PRODUCTS/tempfile
+  292  rmdir PRODUCTS/
+  293  echo $?
+  294  rm -rf PRODUCTS/
+  295  ls -latr sampl3.txt 
+  296  cp sampl3.txt sampl4.txt 
+  297  ls -latr sampl?.txt 
+  298  rsync -arv sampl3.txt   sampl5.txt
+  299  ls -latr sampl?.txt 
+  300  ls demo
+  301  ls
+  302  ls demo
+  303  ls -latr demo
+  304  cp -r demo demo2
+  305  ls -latr demo
+  306  ls -latr demo2
+  307  rsync -arv demo/ demo_rsynced/
+  308  ls -latr demo_rsynced/
+  309* 1000.temp
+  310* /1000.temp
+  311  echo $PATH
+  312  ls
+  313  cp /usr/bin/ls .
+  314  ./ls 
+  315  ./ls
+  316  echo `./ls`
+  317  ./ls
+  318  cd demo
+  319  ~/ls 
+  320  cd ..
+  321  ls -latr .bashrc
+  322  ls -latr *ashrc
+  323  ls -latr .*ashrc
+  324  ls -latr .?ashrc
+  325  ls -latr .[a-z]ashrc
+  326  ls -latr .[!a-z]ashrc
+  327  ls -latr .[!a]ashrc
+  328  mkdir (demo)
+  329  ls -latr
+  330  mkdir \(demo\)
+  331  ls -latr
+  332  rmdir \(demo\)/
+  333  ls -latr
+  334  echo "$PWD"
+  335  echo "$UID"
+  336  mkdir "demo.$UID"
+  337  ls -latr
+  338  rmdir "demo.$UID"
+  339  ls -latr
+  340  mkdir "demo.$UID\;tttt"
+  341  ls -latr
+  342  rmdir demo.1000\\\;tttt/
+  343  mkdir "demo.$UID;tttt"
+  344  ls -latr
+  345  rmdir demo.1000\;tttt/
+  346  mkdir demo\;tttt
+  347  ls -latr
+  348  mkdir demo;tttt
+  349  mkdir demo;tttt2
+  350  mkdir demo\;tttt2
+  351  ls -latr
+  352  rmdir demo\;tttt*
+  353  ls -altr
+  354  vi /etc/sudoers
+  355  sudo vi /etc/sudoers
+  356  sudo vi /etc/sudoers.d/README 
+  357  sudo vi /etc/sudoers
+  358  sudo vi /etc/group
+  359  groups
+  360  cat /proc/meminfo 
+  361  head /proc/meminfo 
+  362  head /proc/cpuinfo 
+  363  tail /proc/cpuinfo 
+  364  head /proc/meminfo 
+  365  top
+  366  top --help
+  367  top -h
+  368  man top
+  369  memtop
+  370  htop
+  371  top
+  372  head /proc/meminfo 
+  373  a="./cmds.log" 
+  374  echo $a
+  375  l
+  376  head -n 1 amazon_reviews_us_Books_v1_02.tsv
+  377  head -n 2 amazon_reviews_us_Books_v1_02.tsv
+  378  script a.txt
+  379  vi a.txt 
+  380  tr -cd '\11\12\15\40-\176' < a.txt > a.txt.clean
+  381  vi a.txt.clean 
+  382  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a.txt
+  383  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a.txt > a.txt.clean 
+  384  vi a.txt.clean 
+  385  tr -cd '\11\12\15\40-\176' a.txt.clean
+  386* tr -cd '\11\12\15\40-\176' < a.txt.clean > a.txt.clean2
+  387  cat 0< a.txt
+  388  mkdir ws1
+  389  cd ws1
+  390  history > cmds.log
